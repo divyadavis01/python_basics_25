@@ -149,18 +149,59 @@
 #        c=c+1
 #     print()
 
-num=2
-for row in range(1,6):
-    counter=0
-    while counter<row:
-        is_prime=True
-        for n in range(2,int(num*.5)+1):
-            if num%n==0:
-                is_prime=False
-            break
-        if is_prime:
-            counter+=1
-            print(num,end=" ")
-        num+=1
-    print("")
+# num=2
+# for row in range(1,6):
+#     counter=0
+#     while counter<row:
+#         is_prime=True
+#         for n in range(2,int(num*.5)+1):
+#             if num%n==0:
+#                 is_prime=False
+#             break
+#         if is_prime:
+#             counter+=1
+#             print(num,end=" ")
+#         num+=1
+#     print("")
 
+"""
+        1
+      2    3
+  4      5     6
+7     8     9     10
+"""
+# n=7
+# c=65
+# for i in range(1,n+1):
+#     for m in range(1,n-i):
+#         print(end=" ")
+#     for j in range(1,i+1):
+#         print(chr(c),end=" ")
+#         c=c+1
+#     print()
+# for i in range(1,n+1):
+#     for m in range(1,i):
+#         print(end=" ")
+#     for j in range(1,n-i+1):
+#         print(chr(c),end=" ")
+#         c=c+1
+#     print()
+
+"""
+        1
+     2  3
+  4  5  6
+7 8  9  10
+"""
+
+
+
+n=5
+c=1
+for i in range(1,n+1):
+    for k in range(1,n-i):
+        print(" ",end=" ")
+    for j in range(1,i+1):
+        print(c,end=" ")
+        c=c+1
+    print()
