@@ -77,19 +77,53 @@
 
 # print(substract(6,7))
 
+# def MyDec(fun):
+#     def wrapper():
+#         print("Excueted before function call")
+#         fun()
+#     return wrapper
+
+# def greeting():
+#     print("Hello World")
+
+# fun=MyDec(greeting)
+# fun()
 
 
-def returneven(fun):
-    def wrapper(n):
-        if n%2==0:
-            return f"{n} is even"
+# def returneven(fun):
+#     def wrapper(n):
+#         if n%2==0:
+#             return f"{n} is even"
+#         else:
+#             return f"{n} is odd"
+#     return wrapper
+
+
+# def evenodd(n):
+#     return n
+
+# w=returneven(evenodd)
+# print(w(5))
+
+def validatePositive(fun):
+    def wrapper(*args):
+        is_pos=True
+        for n in args:
+            if n<0:
+                is_pos=False
+                break
+        if is_pos:
+            fun(*args)
         else:
-            return f"{n} is odd"
+            print("Negative value found")
     return wrapper
 
-def evenodd(n):
-    return n
+@validatePositive
+def addnumbers(*args):
+    total=0
+    for i in args:
+        total=total+i
+    print("Total:",total)
 
-w=returneven(evenodd)
-print(w(4))
-
+addnumbers(10,12,18)
+addnumbers(10,-5,10)
