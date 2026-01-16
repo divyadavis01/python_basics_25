@@ -55,4 +55,12 @@ Count no. of words in a string.
 # for key, value in set.items():
 #     print(key,":",value)
 
+"""Count vowels in a sentence"""
+
+# str=input("Enter a string:")
+# count=0
+# for ch in str:
+#     if ch in "aeiouAEIOU":
+#         count=count+1
+# print(f"There are {count} vowels in {str}")
 

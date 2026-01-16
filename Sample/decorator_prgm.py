@@ -92,18 +92,20 @@
 
 # def returneven(fun):
 #     def wrapper(n):
-#         if n%2==0:
-#             return f"{n} is even"
+#         if n%2!=0:
+#             print("Odd values cannot be printed")
 #         else:
-#             return f"{n} is odd"
+#             print(n)
 #     return wrapper
 
-
+# @returneven
 # def evenodd(n):
-#     return n
+#     if n%2==0:
+#         return f"{n} is even"
+#     else:
+#         return f"{n} is odd"
 
-# w=returneven(evenodd)
-# print(w(5))
+# evenodd(4)
 
 def validatePositive(fun):
     def wrapper(*args):
