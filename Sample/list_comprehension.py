@@ -19,3 +19,10 @@ print(list(zip(a,b)))
 
 for k in zip(a,b):
     print(k)
+
+zipped_data = [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
+names, grades = zip(*zipped_data)
+names = list(names)
+grades = list(grades)
+print(names) 
+print(grades) 

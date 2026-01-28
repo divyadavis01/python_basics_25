@@ -196,12 +196,49 @@
 
 
 
+# n=5
+# c=1
+# for i in range(1,n+1):
+#     for k in range(1,n-i):
+#         print(" ",end=" ")
+#     for j in range(1,i+1):
+#         print(c,end=" ")
+#         c=c+1
+#     print()
+
+# for i in range(4): 
+#     for j in range(6): 
+#       print("*", end=" ") 
+#     print()
+
+# for i in range(5):
+#    for j in range(5):
+#      if i == 0 or i == 4 or j == 0 or j == 4:
+#        print("*", end=" ") 
+#      else: print(" ", end=" ") 
+#    print()
+
+# for i in range(5, 0, -1):
+#    for j in range(1, i + 1):
+#      print(j, end=" ") 
+#    print()
+
+"""
+1
+2 6
+3 7 10 
+4 8 11 13
+5 9 12 14 15
+
+"""
 n=5
 c=1
+r=1
 for i in range(1,n+1):
-    for k in range(1,n-i):
-        print(" ",end=" ")
+    r=i
+    d=n-1
     for j in range(1,i+1):
-        print(c,end=" ")
-        c=c+1
+        print(r,end=" ")
+        r=r+d
+        d=d-1
     print()
