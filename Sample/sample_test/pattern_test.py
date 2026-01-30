@@ -223,22 +223,23 @@
 #      print(j, end=" ") 
 #    print()
 
-"""
-1
-2 6
-3 7 10 
-4 8 11 13
-5 9 12 14 15
+# """
+# 1
+# 2 6
+# 3 7 10 
+# 4 8 11 13
+# 5 9 12 14 15
 
-"""
-n=5
-c=1
-r=1
-for i in range(1,n+1):
-    r=i
-    d=n-1
-    for j in range(1,i+1):
-        print(r,end=" ")
-        r=r+d
-        d=d-1
-    print()
+# """
+# n=5
+# c=1
+# r=1
+# for i in range(1,n+1):
+#     r=i
+#     d=n-1
+#     for j in range(1,i+1):
+#         print(r,end=" ")
+#         r=r+d
+#         d=d-1
+#     print()
+

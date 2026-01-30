@@ -59,26 +59,28 @@ Enter a list; list out the missing numbers from that list
 list=[2,5,3,8]
 output=[4,6,7]
 """
-l=int(input("Enter the size of the list:"))
-list=[]
-for i in range(1,l+1):
-    n=int(input(f"Enter the {i} element: "))
-    list=list+[n]
-print(list)
-for j in range(l):
-    for k in range(0,l-j-1):   
-        # print(l-j-1)
-        if list[j]>list[j+1]:  #2>5
-            print(list[j],list[j+1])
-            n=list[j]
-            list[j]=list[j+1]
-            list[j+1]=n
-print(list)
-small=list[0]
-large=list[-1]
-print(small,large)
+# l=int(input("Enter the size of the list:"))
+# list=[]
+# for i in range(1,l+1):
+#     n=int(input(f"Enter the {i} element: "))
+#     list=list+[n]
+# print(list)
+# for j in range(l):
+#     for k in range(0,l-j-1):   
+#         # print(l-j-1)
+#         if list[j]>list[j+1]:  #2>5
+#             print(list[j],list[j+1])
+#             n=list[j]
+#             list[j]=list[j+1]
+#             list[j+1]=n
+# print(list)
+# small=list[0]
+# large=list[-1]
+# print(small,large)
 
-for num in range(small,large+1):
-    if num not in list:
-        print(num)
+# for num in range(small,large+1):
+#     if num not in list:
+#         print(num)
+
+
 
