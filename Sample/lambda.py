@@ -47,8 +47,8 @@ n=[10,20,30,15]
 
 # # try using dict
 
-# Marks=[("Anna",20,30,40,25),("Ben",30,40,20,25),("Catherine",50,30,20,40),("Disna",20,50,30,40)]
-# print(sum(maths for _,maths,_,_,_ in Marks))
+Marks=[("Anna",20,30,40,25),("Ben",30,40,20,25),("Catherine",50,30,20,40),("Disna",20,50,30,40)]
+print(sum(maths for _,maths,_,_,_ in Marks))
 # print(sum(sci for _,_,sci,_,_ in Marks))
 
 # print(sorted(Marks,key = lambda m:m[1]))
