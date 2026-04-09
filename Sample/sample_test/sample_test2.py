@@ -82,5 +82,13 @@ output=[4,6,7]
 #     if num not in list:
 #         print(num)
 
-
-
+"""reverse a list """
+# l=[1,2,3,4,5]
+# n=len(l)
+# for i in range(n,0,-1):
+#     print(i)
+l=[[1,2,3],[4,5,6],[7,8,9]]
+for i in l:
+    for k in range(len(l)-1,-1,-1):
+        print(i[k],end=" ")
+    print()

@@ -287,14 +287,17 @@ find missing numbers in th list [1,3,5,6]
 #         print(i)
 
 """GCD and LCM of 2 numbers """
-a=int(input("Enter the first number: "))
-b=int(input("Enter the 2nd element: "))
-hcf=1
-small=a if a<b else b
-for i in range(1,small):
-    if a%i==0 and b%i ==0:
-        hcf=i
-print(hcf)
-lcm=(a*b)//hcf
-print(lcm)
+# a=int(input("Enter the first number: "))
+# b=int(input("Enter the 2nd element: "))
+# hcf=1
+# small=a if a<b else b
+# for i in range(1,small):
+#     if a%i==0 and b%i ==0:
+#         hcf=i
+# print(hcf)
+# lcm=(a*b)//hcf
+# print(lcm)
+
+for i in range(1,5):
+    print(i*(10**i-1)//9)
 

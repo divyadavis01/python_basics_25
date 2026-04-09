@@ -105,58 +105,89 @@
 # input="two one seven eight "  output="2178"
 # input="double two triple three" output="22333"
 
-number=input("Enter the phone number in words: (needs 10 digits)")
-word=[]
-space=""
-for i in number:
-    if i != " ":
-        space=space+i
-    else:
-        if space:
-            word=word+[space]
-        space=""
-if word:
-    word=word+[space]
-print(word)
-for i in range(len(word)):
-        if word[i] == "double":
-            word[i] = word[i+1]
-        if word[i] == "triple":
-               word[i]=word[i+1]
-               word=word[:i]+[word[i+1]]+word[i:]
+# number=input("Enter the phone number in words: (needs 10 digits)")
+# word=[]
+# space=""
+# for i in number:
+#     if i != " ":
+#         space=space+i
+#     else:
+#         if space:
+#             word=word+[space]
+#         space=""
+# if word:
+#     word=word+[space]
+# print(word)
+# for i in range(len(word)):
+#         if word[i] == "double":
+#             word[i] = word[i+1]
+#         if word[i] == "triple":
+#                word[i]=word[i+1]
+#                word=word[:i]+[word[i+1]]+word[i:]
 
-print(word)
-l=[]
-n=len(word)
+# print(word)
+# l=[]
+# n=len(word)
 
-for i in word:
-    match i:
-        case "one": 
-                l=l+["1"]
-        case "two":
-                l=l+["2"]
-        case "three":
-                l=l+["3"]
-        case "four":
-                l=l+["4"]
-        case "five":
-                l=l+["5"]
-        case "six":
-                l=l+["6"]
-        case "seven":
-                l=l+["7"]
-        case "eight":
-                l=l+["8"]
-        case "nine":
-                l=l+["9"]
-        case "zero":
-                l=l+["0"]
-        case _:
-            print("You entered default value......!")
+# for i in word:
+#     match i:
+#         case "one": 
+#                 l=l+["1"]
+#         case "two":
+#                 l=l+["2"]
+#         case "three":
+#                 l=l+["3"]
+#         case "four":
+#                 l=l+["4"]
+#         case "five":
+#                 l=l+["5"]
+#         case "six":
+#                 l=l+["6"]
+#         case "seven":
+#                 l=l+["7"]
+#         case "eight":
+#                 l=l+["8"]
+#         case "nine":
+#                 l=l+["9"]
+#         case "zero":
+#                 l=l+["0"]
+#         case _:
+#             print("You entered default value......!")
 
-print(l)
-num="" 
-for digit in l:
-      num=num+digit
-print(num)
+# print(l)
+# num="" 
+# for digit in l:
+#       num=num+digit
+# print(num)
 
+# [[1,2,3],[4,5,6],[7,8,9]]
+# list=[[1,2,3],[4,5,6],[7,8,9]]
+# n_list=[]
+# n=len(list)
+# for i in range(n):
+#     for j in range(i):
+#         list[i][j],list[j][i]=list[j][i],list[i][j]
+# print(list)
+# new_l=[]
+# for i in list:
+#     for k in range(len(list)-1,-1,-1):
+#         print(i[k],end=" ")
+#     print()
+# print(list)
+
+# [[1,2,3],[4,5,6],[7,8,9]]
+# list=[[1,2,3],[4,5,6],[7,8,9]]
+# n_list=[]
+# n=len(list)
+# for i in range(n):
+#     for j in range(i):
+#         list[i][j],list[j][i]=list[j][i],list[i][j]
+# print(list)
+# for i in range(n):
+#     list[i].reverse()
+# print(list)
+c="HHHHHHHHHHHHHHHHHHHHHHHHH"
+co=0
+for i in c:
+    co=co+1
+print(co)
