@@ -186,8 +186,61 @@
 # for i in range(n):
 #     list[i].reverse()
 # print(list)
-c="HHHHHHHHHHHHHHHHHHHHHHHHH"
-co=0
-for i in c:
-    co=co+1
-print(co)
+# c="HHHHHHHHHHHHHHHHHHHHHHHHH"
+# co=0
+# for i in c:
+#     co=co+1
+# print(co)
+"""
+prime number
+"""
+"""n=int(input("Enter the number: "))
+flag=0
+for i in range(2,n):
+    if n%i==0:
+        print(n,i,n%i)
+        flag=0
+        break
+    else:
+        flag=1
+if flag==1:
+    print("prime")
+else:
+    print("Not prime")"""
+
+""" count of digits """
+
+# string="java"
+# d={}
+# for ch in string:
+#     if ch in d:
+#         d[ch]=d[ch]+1
+#     else:
+#         d[ch]=1
+# for m,n in d.items():
+#     print(f"{m} : {n}")
+
+""" count of words in a sentence """
+sent="red roses are red"
+# s=sent.split()
+# ss={}
+# print(s)
+# for i in s:
+#     if i in ss:
+#         ss[i]=ss[i]+1
+#     else:
+#         ss[i]=1
+# for m,n in ss.items():
+#     print(f"{m} : {n}")
+# s=[]
+# w=""
+# for ch in sent:
+#     if ch!=" ":
+#         w=w+ch
+#     else:
+#         s=s+[w]
+#         w=""
+# if w:
+#     s=s+[w]
+# print(s)
+
